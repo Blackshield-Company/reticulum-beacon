@@ -50,4 +50,3 @@
 
 ### Authorship
 
-Built by **synth** with 🎹🦈
