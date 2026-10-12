@@ -14,7 +14,7 @@ security vulnerability, please **do not** open a public issue.
 
 ### Disclosure Process
 
-1. **Report** — Send details to **[synthalorian@gmail.com](mailto:synthalorian@gmail.com)**
+1. **Report** — Send details to **[blackshield@mail.grokbot.com](mailto:blackshield@mail.grokbot.com)**
    with the subject prefix `[BEACON-SEC]`. Include:
    - Description of the vulnerability
    - Steps to reproduce (PoC preferred)
