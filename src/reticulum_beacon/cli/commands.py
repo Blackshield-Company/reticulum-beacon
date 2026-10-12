@@ -153,6 +153,7 @@ def stop() -> None:
     node.request_stop()
     typer.echo("👋 Beacon node stopped")
 
+
 def status() -> None:
     """Show current node status and statistics."""
     from ..propagation.node import PropagationNode

@@ -159,7 +159,7 @@ class BeaconNode:
 
     def request_stop(self) -> None:
         """Signal the keepalive loop to exit (for background mode)."""
-        if hasattr(self, '_keepalive_stop'):
+        if hasattr(self, "_keepalive_stop"):
             self._keepalive_stop.set()
         self.stop()
 
@@ -169,9 +169,13 @@ class BeaconNode:
             return
 
         # Signal keepalive thread to exit first
-        if hasattr(self, '_keepalive_stop'):
+        if hasattr(self, "_keepalive_stop"):
             self._keepalive_stop.set()
-        if hasattr(self, '_keepalive_thread') and self._keepalive_thread and self._keepalive_thread.is_alive():
+        if (
+            hasattr(self, "_keepalive_thread")
+            and self._keepalive_thread
+            and self._keepalive_thread.is_alive()
+        ):
             self._keepalive_thread.join(timeout=2)
 
         from .audit import log_system
