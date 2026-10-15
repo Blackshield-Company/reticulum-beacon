@@ -1,3 +1,5 @@
+![reticulum-beacon](.github/preview.png)
+
 # 🔴 Reticulum Beacon
 
 > Personal Reticulum transport node and service hub — one command to join the mesh
